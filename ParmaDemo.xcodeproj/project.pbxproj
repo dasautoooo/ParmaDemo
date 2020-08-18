@@ -3,17 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D707496024EA71A200F2C22B /* DemoMarkdown.md in Resources */ = {isa = PBXBuildFile; fileRef = D707495F24EA71A200F2C22B /* DemoMarkdown.md */; };
 		D709BF1624E970300070BEE2 /* ParmaDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BF1524E970300070BEE2 /* ParmaDemoApp.swift */; };
 		D709BF1824E970300070BEE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D709BF1724E970300070BEE2 /* ContentView.swift */; };
 		D709BF1A24E970320070BEE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D709BF1924E970320070BEE2 /* Assets.xcassets */; };
 		D709BF1D24E970320070BEE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D709BF1C24E970320070BEE2 /* Preview Assets.xcassets */; };
+		D709BF2624E977110070BEE2 /* Parma in Frameworks */ = {isa = PBXBuildFile; productRef = D709BF2524E977110070BEE2 /* Parma */; };
+		D71A331424EAAD3600287EE4 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D71A331324EAAD3600287EE4 /* Kingfisher */; };
+		D71A331624EAAD3600287EE4 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D71A331524EAAD3600287EE4 /* KingfisherSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D707495F24EA71A200F2C22B /* DemoMarkdown.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DemoMarkdown.md; sourceTree = "<group>"; };
 		D709BF1224E970300070BEE2 /* ParmaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParmaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D709BF1524E970300070BEE2 /* ParmaDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParmaDemoApp.swift; sourceTree = "<group>"; };
 		D709BF1724E970300070BEE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,6 +32,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D71A331624EAAD3600287EE4 /* KingfisherSwiftUI in Frameworks */,
+				D71A331424EAAD3600287EE4 /* Kingfisher in Frameworks */,
+				D709BF2624E977110070BEE2 /* Parma in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +63,7 @@
 				D709BF1524E970300070BEE2 /* ParmaDemoApp.swift */,
 				D709BF1724E970300070BEE2 /* ContentView.swift */,
 				D709BF1924E970320070BEE2 /* Assets.xcassets */,
+				D707495F24EA71A200F2C22B /* DemoMarkdown.md */,
 				D709BF1E24E970320070BEE2 /* Info.plist */,
 				D709BF1B24E970320070BEE2 /* Preview Content */,
 			);
@@ -85,6 +94,11 @@
 			dependencies = (
 			);
 			name = ParmaDemo;
+			packageProductDependencies = (
+				D709BF2524E977110070BEE2 /* Parma */,
+				D71A331324EAAD3600287EE4 /* Kingfisher */,
+				D71A331524EAAD3600287EE4 /* KingfisherSwiftUI */,
+			);
 			productName = ParmaDemo;
 			productReference = D709BF1224E970300070BEE2 /* ParmaDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +126,10 @@
 				Base,
 			);
 			mainGroup = D709BF0924E970300070BEE2;
+			packageReferences = (
+				D709BF2424E977110070BEE2 /* XCRemoteSwiftPackageReference "Parma" */,
+				D71A331224EAAD3600287EE4 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D709BF1324E970300070BEE2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D709BF1D24E970320070BEE2 /* Preview Assets.xcassets in Resources */,
+				D707496024EA71A200F2C22B /* DemoMarkdown.md in Resources */,
 				D709BF1A24E970320070BEE2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +347,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D709BF2424E977110070BEE2 /* XCRemoteSwiftPackageReference "Parma" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dasautoooo/Parma.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+		D71A331224EAAD3600287EE4 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D709BF2524E977110070BEE2 /* Parma */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D709BF2424E977110070BEE2 /* XCRemoteSwiftPackageReference "Parma" */;
+			productName = Parma;
+		};
+		D71A331324EAAD3600287EE4 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D71A331224EAAD3600287EE4 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		D71A331524EAAD3600287EE4 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D71A331224EAAD3600287EE4 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D709BF0A24E970300070BEE2 /* Project object */;
 }
