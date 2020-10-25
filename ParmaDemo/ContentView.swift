@@ -14,10 +14,8 @@ struct ContentView: View {
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading) {
-                Parma(markdown, render: MyRender())
-                    .padding(.horizontal, 24)
-            }
+            Parma(markdown, render: MyRender())
+                .padding(.horizontal, 24)
         }
         .onAppear {
             let url = Bundle.main.url(forResource: "DemoMarkdown", withExtension: "md")!
@@ -75,12 +73,13 @@ struct MyRender: ParmaRenderable {
         )
     }
     
-    func imageView(with urlString: String) -> AnyView {
+    func imageView(with urlString: String, altTextView: AnyView?) -> AnyView {
         AnyView(
             KFImage(URL(string: urlString))
                 .resizable()
                 .scaledToFit()
                 .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+                
         )
     }
 }

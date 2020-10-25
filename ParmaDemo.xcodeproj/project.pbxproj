@@ -354,7 +354,7 @@
 			repositoryURL = "https://github.com/dasautoooo/Parma.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
+				minimumVersion = 0.2.0;
 			};
 		};
 		D71A331224EAAD3600287EE4 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
